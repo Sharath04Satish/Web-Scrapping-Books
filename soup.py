@@ -32,5 +32,6 @@ for book in soup.find_all('article', class_='product_pod'):
     is_in_stock = is_in_stock.split()
     is_in_stock = ' '.join(is_in_stock)   
     print(is_in_stock)
+    
     csv_writer.writerow([title, price, image_link, d_rating[rating], is_in_stock])
 f1.close()
